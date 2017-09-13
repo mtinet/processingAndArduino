@@ -27,6 +27,11 @@ void setup() {
 
 void draw() {
   gauge();
+  drawGraph();
+   
+  //expressBrightness();// 밝기를 조절할 때 주석 해제 
+  //expressDegree();// 서보모터 각도를 조절할 때 주석 해제  
+
   sendData();
 }
 
@@ -43,14 +48,15 @@ void gauge() {
 void gaugeBrightness() {
   valBrightness = mouseX-x;
   valBrightness = constrain(valBrightness, 0, w);
-  
-  fill(255, 0, 0);
-  rect(x, y, valBrightness, h);
 }
 void gaugeServo() {
   valServo = mouseX-100;
   valServo = constrain(valServo, 0, w);
-  
+}
+
+void drawGraph() {
+  fill(255, 0, 0);
+  rect(x, y, valBrightness, h);
   fill(255, 0, 0);
   rect(x, x + distance, valServo, h);
 }
@@ -88,9 +94,4 @@ void mousePressed() {
     valServo = mouseX;
   }
   
-  gaugeBrightness();
-  gaugeServo();
-   
-  expressBrightness();// 밝기를 조절할 때 주석 해제 
-  expressDegree();// 서보모터 각도를 조절할 때 주석 해제  
 }
