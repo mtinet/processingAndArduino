@@ -1,4 +1,4 @@
- char val; // Data received from the serial port
+char val; // Data received from the serial port
  
 int ledRed = 8; // Set the pin to digital I/O 4
 int ledYellow = 9; 
