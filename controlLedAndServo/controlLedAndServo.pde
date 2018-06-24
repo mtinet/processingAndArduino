@@ -51,11 +51,11 @@ void title() {
 void gauge() {
   noStroke();
   //밝기게이지
-  fill(0, 200, 255);
+  fill(51);
   rect(x, y, w, h);
   
   //서보모터 각도 게이지
-  fill(0, 200, 255);
+  fill(51);
   rect(x, x + distance, w, h);
 }
   
