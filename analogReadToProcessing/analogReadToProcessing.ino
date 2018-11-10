@@ -9,5 +9,5 @@ void setup() {
 void loop() {
   valPotentio = analogRead(potentio);
   Serial.print(valPotentio);
-  Serial.print("\n");
+//   Serial.print("\n");
 }
