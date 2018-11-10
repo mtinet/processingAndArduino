@@ -8,7 +8,7 @@ void setup() {
 
 void loop() {
   valPotentio = analogRead(potentio);
+//  Serial.println(valPotentio);
   valPotentio = map(valPotentio, 0, 1023, 0, 255);
   Serial.write(valPotentio);
-//   Serial.print("\n");
 }
