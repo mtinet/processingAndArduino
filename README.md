@@ -13,7 +13,3 @@
 #### - analogReadToProcessing - 아두이노에서 아날로그 신호를 측정하고 시리얼통신을 통해 프로세싱으로 보내 프로세싱 화면에 표시하는 예제  
 #### - control3LEDs - 프로세싱의 3개 네모 안에 마우스를 옮기면 해당 LED가 켜지는 예제  
 #### - controlLedAndServo - 프로세싱으로 LED의 밝기와 서보모터를 제어하는 예제
-
-
-gkgkgkgkgkg
- 
